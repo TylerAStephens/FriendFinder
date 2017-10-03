@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 
 // Created route to html files
 require("./app/routing/htmlRoutes")(app);
-
+// Route to API's
+require("./app/routing/apiRoutes")(app);
 
 // Setting up listener for the express app
 app.listen(PORT, function() {
