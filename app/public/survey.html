@@ -44,5 +44,10 @@
           };
     
           console.log(newFriend);
+
+          $.post("/api/friends", newFriend,)
+          .done(function (data) {
+                console.log(data);
+            });
         });
     </script>
